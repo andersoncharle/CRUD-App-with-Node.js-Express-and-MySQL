@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/style.css">
+    <title><%= title %>  </title>
+</head>
+<body>
+    <!-- <h1>This is the main page which combines all lyout/pages!!!</h1> -->
+  <div class="container">
+      <header> <%- include('./header/index.ejs') %></header>
+   
+      <div class="p-5 m-3 w-75 h-75 bg-light shadow-lg d-flex justify-contents-center align-items-center mx-auto text-center">
+         <p class="text-center p-4 bg-info mx-auto w-100 fs-2 fw-bold p-hacker"> code with <span class="inner-p"> anderson. </span></p>
+      </div>
+      <main> <%- body %> </main>
+
+   <footer class="footer">
+    <%- include('./footer/index.ejs') %>
+   </footer>
+
+</div>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
